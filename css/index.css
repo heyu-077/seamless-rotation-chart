@@ -1,0 +1,67 @@
+.banner{
+    position: relative;
+    width: 520px;
+    height: 280px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.banner .images img{
+    width: 520px;
+    height: 280px;
+    display: block;
+}
+.banner .images a{
+    float: left;
+}
+.banner .dots{
+    position: absolute;
+    height: 10px;
+    left: 0;
+    right: 0;
+    bottom: 12px;
+    margin: 0 auto;
+    background-color: rgb(255, 255, 255, .3);
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2px 4px;
+}
+.banner .dots span{
+    width: 8px;
+    height: 8px;
+    margin: 0 2px;
+    background-color: #fff;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.banner .dots span.active{
+    background-color: #f40;
+}
+.left-arrow{
+    left: 0;
+    border-radius: 0 14px 14px 0;
+}
+.right-arrow{
+    right: 0;
+    border-radius: 14px 0 0 14px;
+}
+.left-arrow, .right-arrow{
+    position: absolute;
+    top: 50%;
+    width: 20px;
+    height: 30px;
+    line-height: 30px;
+    background-color: rgba(255, 255, 255, .5);
+    text-align: center;
+    cursor: pointer;
+}
+.left-arrow:hover, .right-arrow:hover{
+    background-color: rgba(255, 255, 255, .3);
+}
+.arrow{
+    display: none;
+}
+.banner:hover .arrow{
+    display: block;
+}
